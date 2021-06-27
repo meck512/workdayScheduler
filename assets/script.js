@@ -2,6 +2,8 @@
 var titleDate = moment().format("MMMM Do YYYY");
 $("#currentDay").text(titleDate);
 
+
+// LOCAL STORAGE
 // check for saved task, load them, if not then blank array
 if (localStorage.getItem("savedTasks")) {
     taskArray = JSON.parse(localStorage.getItem("savedTasks"));
@@ -35,6 +37,7 @@ function addLocalTasks() {
 };
 
 addLocalTasks();
+// END LOCAL STORAGE
 
 // change color of rows based on time (past/present/future)
 var taskBlock = $(".col-8");

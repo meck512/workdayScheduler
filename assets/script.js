@@ -20,7 +20,7 @@ function saveToLocalStorage() {
             task: taskInput[buttonIndex].value
         };
 
-        localStorage.setItem("localHourlyTasks", JSON.stringify(taskArray));
+        localStorage.setItem("savedTasks", JSON.stringify(taskArray));
     };
 };
 
